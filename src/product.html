@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>product</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Travel posts</h1>
+    </div>
+  </header>
+
+  <section class="section-posts">
+    <div class="container">
+      <a href="index.html" class="back">
+        назад
+      </a>
+      <div class="product">
+        
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    async function getPosts() {
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const params = Object.fromEntries(urlSearchParams.entries()); 
+
+      const res = await fetch("http://localhost/api/product/" + params['id'])
+      const posts = await res.json()
+
+      document.querySelector(".product").innerHTML += `
+        <h2>${posts.id}. ${posts.title}</h2>
+        <p>${posts.body}</p>
+      `
+   } 
+
+  getPosts()
+
+  </script>
+</body>
+</html>

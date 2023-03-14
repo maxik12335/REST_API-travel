@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rest API</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Travel</h1>
+    </div>
+  </header>
+
+  <section class="section-posts">
+    <div class="container">
+
+      <div class="button-add-post">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="posts"></div>
+
+    </div>
+  </section>
+
+  <section class="section-form__add">
+    <div class="container">
+      <div class="close close-form-add">
+        <span></span>
+        <span></span>
+      </div>
+      <h2 class="form-title">Добавить пост</h2>
+      <form class="form form-add">
+        <label class="form__label" for="title">Title</label>
+        <input class="form__input" type="text" id="title" name="title">
+
+        <label class="form__label" for="body">Body</label>
+        <textarea class="form__input" type="text" id="body" name="body"></textarea>
+
+        <button type="submit" class="form__button form__button-add">отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section-form__edit">
+    <div class="container">
+      <div class="close close-form-edit">
+        <span></span>
+        <span></span>
+      </div>
+      <h2 class="form-title">Редактировать пост</h2>
+      <form class="form form-edit">
+        <label class="form__label" for="title">Title</label>
+        <input class="form__input" type="text" id="title-edit" name="title">
+
+        <label class="form__label" for="body">Body</label>
+        <textarea class="form__input" type="text" id="body-edit" name="body"></textarea>
+
+        <button type="submit" class="form__button form__button-edit">отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

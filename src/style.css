@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+section {
+  padding: 50px 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header {
+  padding: 50px 0;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.1207456615458683) 0%, rgba(0,26,255,0.33363081560749297) 100%);
+    color: white;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.button-add-post {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-add-post:hover {
+  transform: scale(1.1);
+}
+
+.button-add-post span {
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  box-shadow: 0px 0px 2px 0px rgb(34 60 80 / 100%);
+  display: block;
+}
+
+.button-add-post span:first-child {
+  transform: rotate(90deg);
+}
+
+.close {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  /* box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%); */
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close span {
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: black;
+  box-shadow: 0px 0px 2px 0px rgb(34 60 80 / 100%);
+  display: block;
+}
+
+.close span:first-child {
+  transform: rotate(45deg);
+}
+
+.close span:last-child {
+  transform: rotate(-45deg);
+}
+
+.section-form__add {
+  position: fixed;
+  display: none;
+  width: 540px;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  color: #aeb6ff;
+}
+
+.section-form__edit{
+  position: fixed;
+  display: none;
+  width: 540px;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  color: #aeb6ff;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.post {
+  width: 30%;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+}
+
+.post__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post__description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__link {
+  display: inline-block;
+  margin: 0 10px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+}
+
+.post-delete:hover {
+  box-shadow: 0px 0px 8px 0px rgb(208 19 19 / 72%);
+}
+
+.post-update:hover {
+  box-shadow: 0px 0px 8px 0px rgb(36 19 208 / 72%);
+}
+
+.post-view:hover {
+  box-shadow: 0px 0px 8px 0px rgb(19 208 32 / 72%);
+}
+
+.form {
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  margin-bottom: 10px;
+}
+
+.form__input {
+  padding: 5px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+}
+
+.form__button {
+  display: block;
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background: #aab3ff;
+  color: white;
+}
+
+.product {
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  padding: 50px;
+  text-align: center;
+}
+
+.product h2 {
+  margin-bottom: 30px;
+}
+
+.back {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  box-shadow: 0px 0px 8px 0px rgb(34 60 80 / 20%);
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.back:hover {
+  background: #aab3ff;
+  color: white;
+}
